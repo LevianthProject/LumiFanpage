@@ -1,0 +1,289 @@
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container__image1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* background-image: url("/lumi-4.jpg"); */
+    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/778456337759076402/Fox-Lumi-V4.png);
+    /* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
+
+    background-size: cover;
+    transition: ease-in-out .3s;
+    z-index: 2;
+}
+
+
+.container__image1 .container__info1 {
+    position: relative;
+    line-height: 1.8;
+    transition: ease-in-out .3s;
+    opacity: 0;
+}
+
+.container__image1:hover .container__info1 {
+    transform: translate3d(-60%, 0, 0);
+    opacity: 1;
+}
+
+.container__image1 .container__location1 {
+    transition-delay: .15s;
+}
+
+.container__image1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: inherit;
+    background-position: bottom;
+    filter: blur(40px) saturate(0);
+    transform: scaleX(.4);
+    transition: ease-in-out .4s;
+    border-radius: 120px;
+    transform-origin: right;
+    opacity: 0;
+    z-index: -1;
+}
+
+.container__image1:hover::before {
+    width: 100%;
+    opacity: .18;
+    filter: blur(10px) saturate(100%);
+    transform: scale(3.0) translate3d(35%, 0, 0);
+}
+
+.container__image1:hover {
+    border-radius: 0;
+    width: 450px;
+    height: 310px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .04), 0 2px 6px rgba(9, 55, 53, .08), 0 16px 24px rgba(9, 55, 53, .1), 0 24px 32px rgba(9, 55, 53, .14);
+}
+
+.link1 {
+    border-bottom: 1px solid transparent;
+    color: #015022;
+    text-decoration: none;
+    transition: ease-in .13s;
+}
+
+.link1:hover {
+    background-color: #015022;
+    color: #FFFFFF;
+}
+
+.contain-blurred {
+    background-color: rgb(147, 227, 236);
+    box-sizing: content-box;
+    padding: 1%;
+}
+
+
+/* photo 2 */
+
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container__image2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* background-image: url("/lumi-4.jpg"); */
+    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/767700959945555998/Yutube_Banner.png);
+    /* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
+
+    background-size: cover;
+    transition: ease-in-out .3s;
+    z-index: 2;
+}
+
+.container__image2 .container__info2 {
+    position: relative;
+    line-height: 1.8;
+    transition: ease-in-out .3s;
+    opacity: 0;
+}
+
+.container__image2:hover .container__info2 {
+    transform: translate3d(-60%, 0, 0);
+    opacity: 1;
+}
+
+.container__image2 .container__location2 {
+    transition-delay: .15s;
+}
+
+.container__image2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: inherit;
+    background-position: bottom;
+    filter: blur(40px) saturate(0);
+    transform: scaleX(.4);
+    transition: ease-in-out .4s;
+    border-radius: 120px;
+    transform-origin: right;
+    opacity: 0;
+    z-index: -1;
+}
+
+.container__image2:hover::before {
+    width: 100%;
+    opacity: .18;
+    filter: blur(10px) saturate(100%);
+    transform: scale(3.0) translate3d(35%, 0, 0);
+}
+
+.container__image2:hover {
+    border-radius: 0;
+    width: 450px;
+    height: 310px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .04), 0 2px 6px rgba(9, 55, 53, .08), 0 16px 24px rgba(9, 55, 53, .1), 0 24px 32px rgba(9, 55, 53, .14);
+}
+
+.link {
+    border-bottom: 1px solid transparent;
+    color: #015022;
+    text-decoration: none;
+    transition: ease-in .13s;
+}
+
+.link:hover {
+    background-color: #015022;
+    color: #FFFFFF;
+}
+
+.contain-blurred {
+    background-color: rgb(147, 227, 236);
+    box-sizing: content-box;
+    padding: 1%;
+}
+
+
+/* photo 3 */
+
+
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container__image3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* background-image: url("/lumi-4.jpg"); */
+    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/767700730072268800/Lumi-V3-smaller.png);
+    /* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
+
+    background-size: cover;
+    transition: ease-in-out .3s;
+    z-index: 2;
+}
+
+.container__image3 .container__info3 {
+    position: relative;
+    line-height: 1.8;
+    transition: ease-in-out .3s;
+    opacity: 0;
+}
+
+.container__image3:hover .container__info3 {
+    transform: translate3d(-60%, 0, 0);
+    opacity: 1;
+}
+
+.container__image3 .container__location3 {
+    transition-delay: .15s;
+}
+
+.container__image3::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: inherit;
+    background-position: bottom;
+    filter: blur(40px) saturate(0);
+    transform: scaleX(.4);
+    transition: ease-in-out .4s;
+    border-radius: 120px;
+    transform-origin: right;
+    opacity: 0;
+    z-index: -1;
+}
+
+.container__image3:hover::before {
+    width: 100%;
+    opacity: .18;
+    filter: blur(10px) saturate(100%);
+    transform: scale(3.0) translate3d(35%, 0, 0);
+}
+
+.container__image3:hover {
+    border-radius: 0;
+    width: 450px;
+    height: 310px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .04), 0 2px 6px rgba(9, 55, 53, .08), 0 16px 24px rgba(9, 55, 53, .1), 0 24px 32px rgba(9, 55, 53, .14);
+}
+
+.link {
+    border-bottom: 1px solid transparent;
+    color: #015022;
+    text-decoration: none;
+    transition: ease-in .13s;
+}
+
+.link:hover {
+    background-color: #015022;
+    color: #FFFFFF;
+}
+
+.contain-blurred {
+    background-color: rgb(147, 227, 236);
+    box-sizing: content-box;
+    padding: 1%;
+}
