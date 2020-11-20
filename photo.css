@@ -16,7 +16,7 @@
     height: 250px;
     border-radius: 50%;
     /* background-image: url("/lumi-4.jpg"); */
-    background-image: url('images/original/Fox-Lumi-V4.png');
+    background-image: url('images/lite/Fox-Lumi-V4.webp');
     /* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
 
     background-size: cover;
@@ -123,7 +123,7 @@
     height: 250px;
     border-radius: 50%;
     /* background-image: url("/lumi-4.jpg"); */
-    background-image: url('images/original/Yutube_Banner.png');
+    background-image: url('images/lite/Yutube_Banner.webp');
     /* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
 
     background-size: cover;
@@ -230,7 +230,7 @@
     height: 250px;
     border-radius: 50%;
     /* background-image: url("/lumi-4.jpg"); */
-    background-image: url('images/original/Lumi-V3-smaller.png');
+    background-image: url('images/lite/Lumi-V3-smaller.webp');
     /* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
 
     background-size: cover;

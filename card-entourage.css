@@ -106,7 +106,7 @@
 } */
 
 .card-ent:nth-child(1):before {
-    background-image: url('images/original/NekoNightGearCard-min.png');
+    background-image: url('images/lite/NekoNightGearCard-min.webp');
     height: 105%;
     padding-left: 1.4em;
     padding-right: 2em;
@@ -114,7 +114,7 @@
 }
 
 .card-ent:nth-child(2):before {
-    background-image: url('images/original/My_card.png');
+    background-image: url('images/lite/My_card.webp');
     height: 105%;
     padding-left: 1.4em;
     padding-right: 2em;
@@ -122,7 +122,7 @@
 }
 
 .card-ent:nth-child(3):before {
-    background-image: url('images/original/Vivain-Card.png');
+    background-image: url('images/lite/Vivain-Card.webp');
     height: 105%;
     padding-left: 1.4em;
     padding-right: 2em;
@@ -130,7 +130,7 @@
 }
 
 .card-ent:nth-child(4):before {
-    background-image: url('images/original/Moose.png');
+    background-image: url('images/lite/Moose.webp');
     height: 105%;
     padding-left: 1.4em;
     padding-right: 2em;
@@ -328,19 +328,19 @@
 
 
 .card-ent1:nth-child(1):before {
-    background-image: url('images/original/Coming-soon.png');
+    background-image: url('images/lite/Coming-soon.webp');
 }
 
 .card-ent1:nth-child(2):before {
-    background-image: url('images/original/Coming-soon.png');
+    background-image: url('images/lite/Coming-soon.webp');
 }
 
 .card-ent1:nth-child(3):before {
-    background-image: url('images/original/Coming-soon.png');
+    background-image: url('images/lite/Coming-soon.webp');
 }
 
 .card-ent1:nth-child(4):before {
-    background-image: url('images/original/Coming-soon.png');
+    background-image: url('images/lite/Coming-soon.webp');
 }
 
 .content-ent1 {
