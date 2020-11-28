@@ -10,7 +10,7 @@ modals.push({
 });
 
 modals.push({
-    html: "<img src='https://media.discordapp.net/attachments/781371112755953689/781702082196537344/Lumi-Christmas-PosterV5.png?width=1249&height=702'>",
+    html: "<img src='images/banner/Lumi-Christmas-PosterV10-8K.png' style='height: 500px'>",
     showCloseButton: true,
     showCancelButton: false,
     showConfirmButton: false,

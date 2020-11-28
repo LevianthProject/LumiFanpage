@@ -145,7 +145,7 @@ body {
 }
 
 .container .column.active .bg.bg1 {
-	background: url('images/lite/bg1.webp');
+	background: url('images/smaller/bg1.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -154,7 +154,7 @@ body {
 }
 
 .container .column.active .bg.bg2 {
-	background: url('images/lite/bg2.webp');
+	background: url('images/smaller/bg2.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -163,7 +163,7 @@ body {
 }
 
 .container .column.active .bg.bg3 {
-	background: url('images/lite/bg3.webp');
+	background: url('images/smaller/bg3.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -172,7 +172,7 @@ body {
 }
 
 .container .column.active .bg.bg4 {
-	background: url('images/lite/bg4.webp');
+	background: url('images/smaller/bg4.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -270,7 +270,7 @@ body {
 	height: 250px;
 	border-radius: 50%;
 	/* background-image: url("/lumi-4.jpg"); */
-	background-image: url('images/lite/Dont-go.webp');
+	background-image: url('images/smaller/Shy-Lumi.png');
 	/* background-image: url('https://cdn.discordapp.com/attachments/781371112755953689/781854817374175252/Lumi-Dont-leave-me-Web.png'); */
 	/* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
 	background-size: cover;
@@ -580,7 +580,7 @@ body {
 }
 
 .example-1 .wrapper {
-	background: url('images/lite/Lumi-in-the-classroom.webp') cover no-repeat;
+	background: url('images/smaller/Lumi-in-the-classroom.png') cover no-repeat;
 
 }
 
@@ -698,7 +698,7 @@ body {
 
 .example-2 .wrapper {
 	background-color: rgb(34, 34, 41);
-	background: url('images/lite/Lumi-in-the-classroom.webp') cover no-repeat;
+	background: url('images/smaller/Lumi-in-the-classroom.png') cover no-repeat;
 
 }
 
@@ -907,7 +907,7 @@ a {
 }
 
 .example-1 .wrapper {
-	background: url('images/lite/Lumi-in-the-classroom.webp') 20% 1% / cover no-repeat;
+	background: url('images/smaller/Lumi-in-the-classroom.png') 20% 1% / cover no-repeat;
 	/* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
 }
 
@@ -1023,7 +1023,7 @@ a {
 }
 
 .example-2 .wrapper {
-	background: url('images/lite/Dont-go-card.webp') center / cover no-repeat;
+	background: url('images/smaller/Lumi-Dont-leave-me.png') center / cover no-repeat;
 	/* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
 
 }
