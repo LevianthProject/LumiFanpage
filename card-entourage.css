@@ -68,6 +68,7 @@
     height: 120%;
     background-size: cover;
     background-position: 0 0;
+    -webkit-transition: transform calc(var(--d) * 1.5) var(--e);
     transition: transform calc(var(--d) * 1.5) var(--e);
     pointer-events: none;
 }
@@ -82,7 +83,9 @@
     height: 200%;
     pointer-events: none;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    -webkit-transition: transform calc(var(--d) * 2) var(--e);
     transition: transform calc(var(--d) * 2) var(--e);
 }
 
@@ -103,7 +106,7 @@
 } */
 
 .card-ent:nth-child(1):before {
-    background-image: url(https://cdn.discordapp.com/attachments/777720468320419871/777721439465111562/NekoNightGearCard-min.png);
+    background-image: url('images/smaller/Neko.png');
     height: 105%;
     padding-left: 1.4em;
     padding-right: 2em;
@@ -111,7 +114,7 @@
 }
 
 .card-ent:nth-child(2):before {
-    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/777684439207641108/My_card_-_Copy.png);
+    background-image: url('images/smaller/Aden.png');
     height: 105%;
     padding-left: 1.4em;
     padding-right: 2em;
@@ -119,7 +122,7 @@
 }
 
 .card-ent:nth-child(3):before {
-    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/778094485422342154/Vivain-Card-.png);
+    background-image: url('images/smaller/Vivi.png');
     height: 105%;
     padding-left: 1.4em;
     padding-right: 2em;
@@ -127,7 +130,7 @@
 }
 
 .card-ent:nth-child(4):before {
-    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/777684386002632724/Moose.png);
+    background-image: url('images/smaller/Moose.png');
     height: 105%;
     padding-left: 1.4em;
     padding-right: 2em;
@@ -141,6 +144,7 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
+    -webkit-transition: transform var(--d) var(--e);
     transition: transform var(--d) var(--e);
     z-index: 1;
 }
@@ -187,16 +191,20 @@
 
 @media (hover: hover) and (min-width: 600px) {
     .card-ent:after {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     .content-ent {
+        -webkit-transform: translateY(calc(100% - 4.5rem));
         transform: translateY(calc(100% - 4.5rem));
     }
 
     .content-ent>*:not(.title-ent) {
         opacity: 0;
+        -webkit-transform: translateY(1rem);
         transform: translateY(1rem);
+        -webkit-transition: transform var(--d) var(--e), opacity var(--d) var(--e);
         transition: transform var(--d) var(--e), opacity var(--d) var(--e);
     }
 
@@ -207,23 +215,28 @@
 
     .card-ent:hover:before,
     .card-ent:focus-within:before {
+        -webkit-transform: translateY(-4%);
         transform: translateY(-4%);
     }
 
     .card-ent:hover:after,
     .card-ent:focus-within:after {
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
     .card-ent:hover .content-ent,
     .card-ent:focus-within .content-ent {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     .card-ent:hover .content-ent>*:not(.title-ent),
     .card-ent:focus-within .content-ent>*:not(.title-ent) {
         opacity: 1;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
+        -webkit-transition-delay: calc(var(--d) / 8);
         transition-delay: calc(var(--d) / 8);
     }
 
@@ -231,6 +244,7 @@
     .card-ent:focus-within:after,
     .card-ent:focus-within .content-ent,
     .card-ent:focus-within .content-ent>*:not(.title-ent) {
+        -webkit-transition-duration: 0s;
         transition-duration: 0s;
     }
 }
@@ -291,6 +305,7 @@
     height: 110%;
     background-size: cover;
     background-position: 0 0;
+    -webkit-transition: transform calc(var(--d) * 1.5) var(--e);
     transition: transform calc(var(--d) * 1.5) var(--e);
     pointer-events: none;
 }
@@ -305,25 +320,27 @@
     height: 200%;
     pointer-events: none;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    -webkit-transition: transform calc(var(--d) * 2) var(--e);
     transition: transform calc(var(--d) * 2) var(--e);
 }
 
 
 .card-ent1:nth-child(1):before {
-    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/778428219455307796/Coming-soon.png);
+    background-image: url('images/smaller/Lumi-Point.png');
 }
 
 .card-ent1:nth-child(2):before {
-    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/778428219455307796/Coming-soon.png);
+    background-image: url('images/smaller/Lumi-Point.png');
 }
 
 .card-ent1:nth-child(3):before {
-    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/778428219455307796/Coming-soon.png);
+    background-image: url('images/smaller/Lumi-Point.png');
 }
 
 .card-ent1:nth-child(4):before {
-    background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/778428219455307796/Coming-soon.png);
+    background-image: url('images/smaller/Lumi-Point.png');
 }
 
 .content-ent1 {
@@ -333,6 +350,7 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
+    -webkit-transition: transform var(--d) var(--e);
     transition: transform var(--d) var(--e);
     z-index: 1;
 }
@@ -379,16 +397,20 @@
 
 @media (hover: hover) and (min-width: 600px) {
     .card-ent1:after {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     .content-ent1 {
+        -webkit-transform: translateY(calc(100% - 4.5rem));
         transform: translateY(calc(100% - 4.5rem));
     }
 
     .content-ent1>*:not(.title-ent1) {
         opacity: 0;
+        -webkit-transform: translateY(1rem);
         transform: translateY(1rem);
+        -webkit-transition: transform var(--d) var(--e), opacity var(--d) var(--e);
         transition: transform var(--d) var(--e), opacity var(--d) var(--e);
     }
 
@@ -399,23 +421,28 @@
 
     .card-ent1:hover:before,
     .card-ent1:focus-within:before {
+        -webkit-transform: translateY(-4%);
         transform: translateY(-4%);
     }
 
     .card-ent1:hover:after,
     .card-ent1:focus-within:after {
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
 
     .card-ent1:hover .content-ent1,
     .card-ent1:focus-within .content-ent1 {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     .card-ent1:hover .content-ent1>*:not(.title-ent1),
     .card-ent1:focus-within .content-ent1>*:not(.title-ent1) {
         opacity: 1;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
+        -webkit-transition-delay: calc(var(--d) / 8);
         transition-delay: calc(var(--d) / 8);
     }
 
@@ -423,6 +450,7 @@
     .card-ent1:focus-within:after,
     .card-ent1:focus-within .content-ent1,
     .card-ent1:focus-within .content-ent1>*:not(.title-ent1) {
+        -webkit-transition-duration: 0s;
         transition-duration: 0s;
     }
 }

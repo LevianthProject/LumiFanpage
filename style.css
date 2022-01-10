@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"); */
+
 h2 {
 	font-family: 'Josefin Sans', sans-serif;
 }
-
-
 
 body {
 	margin: 0;
@@ -11,8 +12,6 @@ body {
 	font-family: sans-serif;
 	/* background-color: rgb(185, 218, 251); */
 }
-
-
 
 /* nav top */
 .navbar-top {
@@ -24,14 +23,10 @@ body {
 	color: rgba(148, 255, 253, 0.918);
 }
 
-
-/* ::selection {
-	background: #19f6e8;
-} */
-
 .svg-wrapper {
 	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	margin: 0 auto;
 	width: 500px;
@@ -44,7 +39,9 @@ body {
 	fill: transparent;
 	stroke: #19f6e8;
 	border-bottom: 5px solid black;
+	-webkit-transition-timing-function: linear;
 	transition-timing-function: linear;
+	-webkit-transition: stroke-dashoffset 4s, stroke-dasharray 4s;
 	transition: stroke-dashoffset 4s, stroke-dasharray 4s;
 }
 
@@ -56,25 +53,11 @@ body {
 	stroke-dashoffset: -1120;
 }
 
-
 .svg-wrapper:hover .shape1,
 .svg-wrapper:hover .shape2 {
 	stroke-dashoffset: 0;
 	stroke-dasharray: 1120;
 }
-
-
-
-/*  */
-
-
-
-
-
-
-
-
-
 
 .container {
 	width: 100%;
@@ -106,6 +89,7 @@ body {
 .container .column .content h1 {
 	position: absolute;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width: 100%;
 	background: rgba(0, 0, 0, .1);
@@ -121,17 +105,20 @@ body {
 .container .column .content .box {
 	position: absolute;
 	top: 50%;
+	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
 	box-sizing: border-box;
 	padding: 40px;
 	background: rgba(255, 255, 255, 0.272);
 	text-align: center;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	opacity: 0;
 }
 
 .container .column.active .content .box {
 	opacity: 1;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
@@ -158,37 +145,40 @@ body {
 }
 
 .container .column.active .bg.bg1 {
-	background: url(https://cdn.discordapp.com/attachments/742971442617909248/747469084987359342/lumi_yt_art_V23x.png);
+	background: url('images/smaller/bg1.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
 .container .column.active .bg.bg2 {
-	background: url(https://cdn.discordapp.com/attachments/742971442617909248/752524464801185842/2020-09-07_s1.png);
+	background: url('images/smaller/bg2.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
 .container .column.active .bg.bg3 {
-	background: url(https://cdn.discordapp.com/attachments/742971442617909248/743872333659373648/Frame_1-1.png);
+	background: url('images/smaller/bg3.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
 .container .column.active .bg.bg4 {
-	background: url(https://cdn.discordapp.com/attachments/742971442617909248/743142914020081824/Untitled-1.png);
+	background: url('images/smaller/bg4.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
-
 
 .container2 {
 	/* background-image: linear-gradient(180deg, rgb(185, 218, 251)); */
@@ -224,19 +214,13 @@ body {
 
 }
 
-
 .container2 .coming-soon .blured {
 	background: url(lumi-2.jpg) !important;
-
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	filter: blur(100%);
 }
-
-
-
-
 
 .paragh {
 	font-family: 'Jura', sans-serif;
@@ -247,16 +231,7 @@ body {
 	padding: 5px;
 }
 
-
-
-
-
-
-
 /* blureddd */
-
-
-
 .blured-title {
 	display: grid;
 	place-items: center;
@@ -265,8 +240,6 @@ body {
 	color: rgb(53, 30, 57);
 	/* font-family: 'Krona One', sans-serif; */
 	font-family: 'Josefin Sans', sans-serif;
-
-
 }
 
 .ht1tl {
@@ -297,10 +270,11 @@ body {
 	height: 250px;
 	border-radius: 50%;
 	/* background-image: url("/lumi-4.jpg"); */
-	background-image: url(https://cdn.discordapp.com/attachments/761282456351015004/767701554655920168/Dont-go....png);
+	background-image: url('images/smaller/Shy-Lumi.png');
+	/* background-image: url('https://cdn.discordapp.com/attachments/781371112755953689/781854817374175252/Lumi-Dont-leave-me-Web.png'); */
 	/* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
-
 	background-size: cover;
+	-webkit-transition: ease-in-out .3s;
 	transition: ease-in-out .3s;
 	z-index: 2;
 }
@@ -308,11 +282,13 @@ body {
 .container__image .container__info {
 	position: relative;
 	line-height: 1.8;
+	-webkit-transition: ease-in-out .3s;
 	transition: ease-in-out .3s;
 	opacity: 0;
 }
 
 .container__image:hover .container__info {
+	-webkit-transform: translate3d(-60%, 0, 0);
 	transform: translate3d(-60%, 0, 0);
 	opacity: 1;
 }
@@ -333,9 +309,12 @@ body {
 	background: inherit;
 	background-position: bottom;
 	filter: blur(40px) saturate(0);
+	-webkit-transform: scaleX(.4);
 	transform: scaleX(.4);
+	-webkit-transition: ease-in-out .4s;
 	transition: ease-in-out .4s;
 	border-radius: 120px;
+	-webkit-transform-origin: right;
 	transform-origin: right;
 	opacity: 0;
 	z-index: -1;
@@ -345,6 +324,7 @@ body {
 	width: 100%;
 	opacity: .18;
 	filter: blur(10px) saturate(100%);
+	-webkit-transform: scale(3.0) translate3d(35%, 0, 0);
 	transform: scale(3.0) translate3d(35%, 0, 0);
 }
 
@@ -359,6 +339,7 @@ body {
 	border-bottom: 1px solid transparent;
 	color: #015022;
 	text-decoration: none;
+	-webkit-transition: ease-in .13s;
 	transition: ease-in .13s;
 }
 
@@ -373,15 +354,6 @@ body {
 	padding: 1%;
 }
 
-/* c1 */
-
-
-/* bluredd */
-
-
-
-
-
 .container-games {
 	box-sizing: content-box;
 	height: 500px;
@@ -392,14 +364,9 @@ body {
 	justify-content: center;
 }
 
-
-
 .container-games .widget-games a {
 	text-decoration: none;
 }
-
-
-
 
 .contentz {
 	flex-direction: column;
@@ -428,8 +395,6 @@ body {
 	/*   padding: 2em 0em; */
 }
 
-
-
 .btnz {
 	letter-spacing: 0.1em;
 	cursor: pointer;
@@ -439,6 +404,7 @@ body {
 	max-width: 160px;
 	position: relative;
 	text-decoration: none;
+	-webkit-text-transform: uppercase;
 	text-transform: uppercase;
 	width: 100%;
 }
@@ -449,11 +415,11 @@ body {
 
 /*btnz_background*/
 .effect04 {
-
 	display: inline-flex;
 	color: #000;
 	outline: solid 2px #000;
 	position: relative;
+	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 	overflow: hidden;
 }
@@ -461,12 +427,13 @@ body {
 .effect04::before,
 .effect04 span {
 	margin: 0 auto;
+	-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 }
 
 .effect04:hover {
-
 	background-color: #000;
 }
 
@@ -492,10 +459,7 @@ body {
 	transform: translateY(0) scale(1, 1);
 }
 
-
 /* news section */
-
-
 * {
 	box-sizing: border-box;
 }
@@ -507,8 +471,6 @@ body {
 	height: 100vh;
 	font-family: 'Open Sans', sans-serif;
 }
-
-
 
 .container-news a {
 	text-decoration: none;
@@ -562,6 +524,7 @@ body {
 	font-size: 10px;
 	font-weight: 700;
 	font-family: 'Open Sans';
+	-webkit-transform: translate(-50%, 0);
 	transform: translate(-50%, 0);
 }
 
@@ -574,6 +537,7 @@ body {
 }
 
 .card .wrapper:hover .data {
+	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
 
@@ -581,7 +545,9 @@ body {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	-webkit-transform: translateY(calc(70px + 1em));
 	transform: translateY(calc(70px + 1em));
+	-webkit-transition: transform 0.3s;
 	transition: transform 0.3s;
 }
 
@@ -609,11 +575,12 @@ body {
 }
 
 .card input[type='checkbox']:checked+.menu-content {
+	-webkit-transform: translateY(-60px);
 	transform: translateY(-60px);
 }
 
 .example-1 .wrapper {
-	background: url(https://cdn.discordapp.com/attachments/761282456351015004/778422302928797776/Lumi-in-the-classroom.png) cover no-repeat;
+	background: url('images/smaller/Lumi-in-the-classroom.png') cover no-repeat;
 
 }
 
@@ -638,6 +605,7 @@ body {
 }
 
 .example-1 .date .month {
+	-webkit-text-transform: uppercase;
 	text-transform: uppercase;
 }
 
@@ -701,7 +669,9 @@ body {
 	left: 0;
 	width: 100%;
 	z-index: -1;
+	-webkit-transition: transform 0.3s;
 	transition: transform 0.3s;
+	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
 
@@ -717,6 +687,7 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	font-size: 24px;
 }
@@ -727,11 +698,12 @@ body {
 
 .example-2 .wrapper {
 	background-color: rgb(34, 34, 41);
-	background: url(https://cdn.discordapp.com/attachments/761282456351015004/778422302928797776/Lumi-in-the-classroom.png) cover no-repeat;
+	background: url('images/smaller/Lumi-in-the-classroom.png') cover no-repeat;
 
 }
 
 .example-2 .wrapper:hover .menu-content span {
+	-webkit-transform: translate(-50%, -10px);
 	transform: translate(-50%, -10px);
 	opacity: 1;
 }
@@ -766,12 +738,14 @@ body {
 }
 
 .example-2 .menu-content span {
+	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	opacity: 0;
 }
 
 .example-2 .data {
 	color: #fff;
+	-webkit-transform: translateY(calc(70px + 4em));
 	transform: translateY(calc(70px + 4em));
 }
 
@@ -797,11 +771,14 @@ body {
 	position: absolute;
 	right: 0;
 	top: 50%;
+	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
+	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .example-2 .button:hover::after {
+	-webkit-transform: translate(5px, -50%);
 	transform: translate(5px, -50%);
 	opacity: 1;
 }
@@ -874,6 +851,7 @@ a {
 	font-size: 10px;
 	font-weight: 700;
 	font-family: 'Open Sans';
+	-webkit-transform: translate(-50%, 0);
 	transform: translate(-50%, 0);
 }
 
@@ -886,6 +864,7 @@ a {
 }
 
 .card .wrapper:hover .data {
+	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
 
@@ -893,7 +872,9 @@ a {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	-webkit-transform: translateY(calc(70px + 1em));
 	transform: translateY(calc(70px + 1em));
+	-webkit-transition: transform 0.3s;
 	transition: transform 0.3s;
 }
 
@@ -921,11 +902,12 @@ a {
 }
 
 .card input[type='checkbox']:checked+.menu-content {
+	-webkit-transform: translateY(-60px);
 	transform: translateY(-60px);
 }
 
 .example-1 .wrapper {
-	background: url(https://cdn.discordapp.com/attachments/761282456351015004/778422302928797776/Lumi-in-the-classroom.png) 20% 1% / cover no-repeat;
+	background: url('images/smaller/Lumi-in-the-classroom.png') 20% 1% / cover no-repeat;
 	/* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
 }
 
@@ -1013,7 +995,9 @@ a {
 	left: 0;
 	width: 100%;
 	z-index: -1;
+	-webkit-transition: transform 0.3s;
 	transition: transform 0.3s;
+	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
 
@@ -1029,6 +1013,7 @@ a {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	font-size: 24px;
 }
@@ -1038,12 +1023,13 @@ a {
 }
 
 .example-2 .wrapper {
-	background: url(https://cdn.discordapp.com/attachments/761282456351015004/767701554655920168/Dont-go....png) center / cover no-repeat;
+	background: url('images/smaller/Lumi-Dont-leave-me.png') center / cover no-repeat;
 	/* background: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ); */
 
 }
 
 .example-2 .wrapper:hover .menu-content span {
+	-webkit-transform: translate(-50%, -10px);
 	transform: translate(-50%, -10px);
 	opacity: 1;
 }
@@ -1078,12 +1064,14 @@ a {
 }
 
 .example-2 .menu-content span {
+	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	opacity: 0;
 }
 
 .example-2 .data {
 	color: #fff;
+	-webkit-transform: translateY(calc(70px + 4em));
 	transform: translateY(calc(70px + 4em));
 }
 
@@ -1109,30 +1097,22 @@ a {
 	position: absolute;
 	right: 0;
 	top: 50%;
+	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
+	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .example-2 .button:hover::after {
+	-webkit-transform: translate(5px, -50%);
 	transform: translate(5px, -50%);
 	opacity: 1;
 }
-
-
-
 /* end news section */
 
 
 
-
-
-
-
-
 /* video section */
-
-
-
 .video-section {
 	display: grid;
 	width: 75%;
@@ -1140,15 +1120,9 @@ a {
 	padding: 1rem;
 	margin: 0 auto;
 	height: 100vh;
-
 	grid-template-columns: auto auto auto auto auto auto;
 	grid-gap: 10px;
 }
-
-
-
-
-
 
 /* .main-video {
 	width: 1000px;
@@ -1172,16 +1146,6 @@ a {
 	font-size: 30px;
 } */
 
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-
 .video-container {
 	/* margin-top: -80px; */
 	height: 140vh;
@@ -1204,8 +1168,11 @@ a {
 .flip>.front,
 .flip>.back {
 	display: block;
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
+	-webkit-transition-property: transform, opacity;
 	transition-property: transform, opacity;
 }
 
@@ -1220,27 +1187,33 @@ a {
 	left: 0px;
 	width: 100%;
 	height: 100%;
+	-webkit-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
 }
 
 .flip:hover>.front {
+	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
 
 .flip:hover>.back {
 	opacity: 1;
+	-webkit-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 }
 
 .flip.flip-vertical>.back {
+	-webkit-transform: rotateX(-180deg);
 	transform: rotateX(-180deg);
 }
 
 .flip.flip-vertical:hover>.front {
+	-webkit-transform: rotateX(180deg);
 	transform: rotateX(180deg);
 }
 
 .flip.flip-vertical:hover>.back {
+	-webkit-transform: rotateX(0deg);
 	transform: rotateX(0deg);
 }
 
@@ -1278,9 +1251,6 @@ a {
 }
  */
 
-
-
-
 .flip>.front p,
 .flip>.back p {
 	font-size: 0.9125rem;
@@ -1292,66 +1262,22 @@ a {
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .h-parlast {
 	text-decoration: bold;
 }
-
-
-
-
-
 
 .LP-n {
 	font-family: 'Julius Sans One', sans-serif;
 
 }
 
-
-
-
-
-
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
-
-
 .acc-footer {
 	display: grid;
 }
 
-
 .nvlast {
-
 	color: rgba(34, 34, 34, 0.734);
 }
-
-/* .cntctlumi {
-	background-image: linear-gradient(90deg, rgb(185, 218, 251), rgba(255, 255, 255, 0.374), rgb(185, 218, 251));
-	padding: 10px;
-
-}
-
-.flwlevi {
-	background-image: linear-gradient(90deg, rgb(185, 218, 251), rgba(175, 213, 221, 0.401), rgb(185, 218, 251));
-	padding: 10px;
-} */
-
-/* 
-background-image: linear-gradient(180deg, rgb(185, 218, 251), rgb(120, 184, 248)); */
-
-
 
 .footer-social-links {
 	font-size: 14px;
@@ -1417,11 +1343,3 @@ background-image: linear-gradient(180deg, rgb(185, 218, 251), rgb(120, 184, 248)
 .footer-social-links a:hover:before {
 	background: rgb(38, 95, 106);
 }
-
-
-
-
-
-
-
-/*  */
